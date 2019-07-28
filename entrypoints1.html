@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    //using ready state
+	function load(){
+		for(let i=0; i<10; i++){
+		let element = document.createElement("div");
+		element.innerHTML = "element " + i;
+		document.body.appendChild(element);
+	}
+    }
+    if(document.readyState == "loading"){
+        document.addEventListener("DOMContentLoaded", load); //will execute the code only after the entire html elements 
+        //(body) loads.
+    }
+	else{
+        load();
+    }
+
+    //DOM vs Media
+    window.onload = function(){ //will check whether or not an image, video or dom element has been specifically loaded.
+
+    }
+
+</script>
+<body>
+    
+</body>
+</html>
