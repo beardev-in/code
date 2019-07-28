@@ -115,7 +115,7 @@ quirk1: let and const inside a function vs global variable.
    -an empty array is an expression 
    -an empty object is a statement (it will will give undefined)
    -anything that relates to var, let, const is a statement (returns undefined)
-   -other all are expressions (returns values)
+   -other all arwe expressions (returns values)
 
    **let e = new Number(23);**
    -[Number: 23]
